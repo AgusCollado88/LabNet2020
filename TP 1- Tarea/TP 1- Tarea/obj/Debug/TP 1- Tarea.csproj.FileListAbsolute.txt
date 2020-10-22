@@ -1,0 +1,7 @@
+C:\Users\aguco\source\repos\TP 1- Tarea\TP 1- Tarea\obj\Debug\TP 1- Tarea.csprojAssemblyReference.cache
+C:\Users\aguco\source\repos\TP 1- Tarea\TP 1- Tarea\obj\Debug\TP 1- Tarea.csproj.CoreCompileInputs.cache
+C:\Users\aguco\source\repos\TP 1- Tarea\TP 1- Tarea\bin\Debug\TP 1- Tarea.exe.config
+C:\Users\aguco\source\repos\TP 1- Tarea\TP 1- Tarea\bin\Debug\TP 1- Tarea.exe
+C:\Users\aguco\source\repos\TP 1- Tarea\TP 1- Tarea\bin\Debug\TP 1- Tarea.pdb
+C:\Users\aguco\source\repos\TP 1- Tarea\TP 1- Tarea\obj\Debug\TP 1- Tarea.exe
+C:\Users\aguco\source\repos\TP 1- Tarea\TP 1- Tarea\obj\Debug\TP 1- Tarea.pdb
