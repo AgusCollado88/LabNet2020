@@ -40,8 +40,8 @@ namespace Practica_1_EF
                 ProductsLogic productsLogic = new ProductsLogic();
                 var products = productsLogic.Products();
                 var item = productsLogic.Products(i);
-                productsLogic.Products(i);
-                if (EsInt && i < products.Count)
+                
+                if (EsInt && i < products.Count) 
                     Console.WriteLine($" ID: {item.ProductID} , NOMBRE: {item.ProductName} , ID DE PROVEEDOR: {item.SupplierID} , CATEGORIA: {item.CategoryID}, {System.Environment.NewLine} " +
                         $"CANTIDAD POR UNIDAD: {item.QuantityPerUnit} , PRECIO UNITARIO: {item.UnitPrice} ,  UNIDADES EN STOCK: {item.UnitsInStock}, {System.Environment.NewLine} UNIDADES ENCARGADAS: {item.UnitsOnOrder} , PUNTO DE PEDIDO: {item.ReorderLevel} , DESCONTINUADO: {item.Discontinued}");
                 else
