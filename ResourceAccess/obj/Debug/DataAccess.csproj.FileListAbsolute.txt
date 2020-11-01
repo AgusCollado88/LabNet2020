@@ -1,0 +1,15 @@
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\bin\Debug\ResourceAccess.dll.config
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\bin\Debug\ResourceAccess.dll
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\bin\Debug\ResourceAccess.pdb
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\bin\Debug\Entities.dll
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\bin\Debug\EntityFramework.dll
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\bin\Debug\Entities.pdb
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\bin\Debug\Entities.dll.config
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\bin\Debug\EntityFramework.xml
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\obj\Debug\ResourceAccess.dll
+C:\Users\aguco\source\repos\Practica 1 EF\ResourceAccess\obj\Debug\ResourceAccess.pdb

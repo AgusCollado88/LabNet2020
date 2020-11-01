@@ -1,0 +1,21 @@
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\obj\Debug\Practica 1 EF.csprojAssemblyReference.cache
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\obj\Debug\Practica 1 EF.csproj.CoreCompileInputs.cache
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\Practica 1 EF.exe.config
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\Practica 1 EF.exe
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\Practica 1 EF.pdb
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\Entities.dll
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\EntityFramework.dll
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\Logic.dll
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\ResourceAccess.dll
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\Entities.pdb
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\Entities.dll.config
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\Logic.pdb
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\Logic.dll.config
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\ResourceAccess.pdb
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\ResourceAccess.dll.config
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\EntityFramework.xml
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\obj\Debug\Practica 1 EF.csproj.CopyComplete
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\obj\Debug\Practica 1 EF.exe
+C:\Users\aguco\source\repos\Practica 1 EF\Practica 1 EF\obj\Debug\Practica 1 EF.pdb
