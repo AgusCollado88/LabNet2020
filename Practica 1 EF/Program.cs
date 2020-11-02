@@ -27,8 +27,7 @@ namespace Practica_1_EF
 
             Console.ReadKey();
             Console.Clear();
-
-
+           
             Console.WriteLine("Ingrese un número de ID de Producto o ingrese 0 para finalizar.");
             Console.WriteLine("");
             string paramProducto = Console.ReadLine();

@@ -17,16 +17,21 @@ namespace Logic
         {
             this.context = new NorthwindContext();
         }
+
+
         public List<Products> Products()
        {
- 
+           
            return context.Products.ToList();
+          
        }
 
         public Products Products(int Id) 
         {
             return context.Products.FirstOrDefault(r => r.ProductID.Equals(Id));
         }
+
+
 
     }
 }
