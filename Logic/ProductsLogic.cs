@@ -26,15 +26,17 @@ namespace Logic
             throw new NotImplementedException();
         }
 
+
+        Products ILogic<Products>.Delete(Products entity)
+        {
+            throw new NotImplementedException();
+        }
+
         public Products Update(Products entity)
         {
             throw new NotImplementedException();
         }
 
-        public Products Delete(Products entity)
-        {
-            throw new NotImplementedException();
-        }
-
+       
     }
 }

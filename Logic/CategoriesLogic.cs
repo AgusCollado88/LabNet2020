@@ -2,10 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+
+
 
 namespace Logic
 {
@@ -20,6 +23,7 @@ namespace Logic
         }
         public Categories GetOne(int id) 
         {
+            context.Categories.FirstOrDefault(r => r.CategoryID.Equals(id));
             return context.Categories.FirstOrDefault(r => r.CategoryID.Equals(id));
         }
 
@@ -36,13 +40,24 @@ namespace Logic
             return nuevaCategoria;
         }
 
+
         public Categories Update(Categories entity)
         {
-            throw new NotImplementedException();
+            Categories categoriaAEditar = GetOne(entity.CategoryID);
+            categoriaAEditar.CategoryName = entity.CategoryName;
+            categoriaAEditar.Description = entity.Description;
+            context.SaveChanges();
+            Categories T = null;
+            return T;
         }
+
         public Categories Delete(Categories entity)
         {
-            throw new NotImplementedException();
+            Categories categoriaAEliminar = GetOne(entity.CategoryID);
+            context.Categories.Remove(categoriaAEliminar);
+            context.SaveChanges();
+            Categories T = null;
+            return T;
         }
     }
 }

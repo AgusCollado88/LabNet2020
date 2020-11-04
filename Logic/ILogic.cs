@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,6 @@ namespace Logic
         T Insert(T entity);
         T Update(T entity);
         T Delete(T entity);
+        
     }
 }
