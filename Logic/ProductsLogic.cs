@@ -8,30 +8,33 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public class ProductsLogic
+    public class ProductsLogic : BaseLogic, ILogic<Products>
     {
-
-        private readonly NorthwindContext context;
-
-        public ProductsLogic()
+        
+        public List<Products> GetAll()
         {
-            this.context = new NorthwindContext();
-        }
-
-
-        public List<Products> Products()
-       {
            
            return context.Products.ToList();
           
-       }
-
-        public Products Products(int Id) 
+        }
+        public Products GetOne(int Id) 
         {
             return context.Products.FirstOrDefault(r => r.ProductID.Equals(Id));
         }
+        public Products Insert(Products entity)
+        {
+            throw new NotImplementedException();
+        }
 
+        public Products Update(Products entity)
+        {
+            throw new NotImplementedException();
+        }
 
+        public Products Delete(Products entity)
+        {
+            throw new NotImplementedException();
+        }
 
     }
 }
