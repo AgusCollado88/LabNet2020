@@ -94,7 +94,7 @@ namespace Practica_1_EF
                                 {
                                     var item2 = categoriesLogic.GetOne(m);
 
-                                    categoriesLogic.Update(new Categories
+                                    categoriesLogic.Delete(new Categories
                                     {
                                         CategoryID = m
                                     });
