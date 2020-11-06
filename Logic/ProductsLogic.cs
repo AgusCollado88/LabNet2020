@@ -37,6 +37,9 @@ namespace Logic
             throw new NotImplementedException();
         }
 
-       
+        public Products GetIds()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
