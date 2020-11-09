@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,21 +44,28 @@ namespace Logic
 
         public Categories Update(Categories entity)
         {
-            Categories categoriaAEditar = GetOne(entity.CategoryID);
-            if (categoriaAEditar == null)
+            try
             {
-                Console.WriteLine("El número de ID ingresado no es válido.");
-                return categoriaAEditar;
-                
+                Categories categoriaAEditar = GetOne(entity.CategoryID);
+                if (categoriaAEditar == null)
+                {
+                    Console.WriteLine("El número de ID ingresado no es válido.");
+                    return categoriaAEditar;
+
+                }
+                else
+                {
+                    categoriaAEditar.CategoryName = entity.CategoryName;
+                    categoriaAEditar.Description = entity.Description;
+                    context.SaveChanges();
+                    Console.WriteLine("");
+                    Console.WriteLine($"LA MODIFICACIÓN FUE EXITOSA: {System.Environment.NewLine} CATEGORIA {entity.CategoryID}: {entity.CategoryID} CON DESCRIPCIÓN: {entity.Description}. {System.Environment.NewLine}");
+                    return categoriaAEditar;
+                }
             }
-            else
+            catch
             {
-                categoriaAEditar.CategoryName = entity.CategoryName;
-                categoriaAEditar.Description = entity.Description;
-                context.SaveChanges();
-                Console.WriteLine("");
-                Console.WriteLine($"LA MODIFICACIÓN FUE EXITOSA: {System.Environment.NewLine} CATEGORIA {entity.CategoryID}: {entity.CategoryID} CON DESCRIPCIÓN: {entity.Description}. {System.Environment.NewLine}");
-                return categoriaAEditar;
+                throw 
             }
         }
 
