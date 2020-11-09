@@ -1,0 +1,91 @@
+*{
+	margin:0;
+    padding:0;
+}
+.error {color: red; padding-left: 12px;}
+.error2 {color: red; padding-left: 12px;}
+#caja{width: 200; height: 100px; background: blue; cursor: pointer;}
+
+header div.logotipo img {
+	padding:0px;
+	margin:0px;
+}
+body {
+	background:#e6e6e6;
+}
+header, .main{
+	
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+}
+
+header nav {
+	background:#7aa6c2;
+	overflow:hidden;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	float:left;
+	}
+	
+header nav ul li a {
+	padding:10px 20px;
+	display:block;
+	color:#fff;
+	text-decoration:none;
+}
+header nav ul li a:hover{
+	background:#9dc6e0;
+}
+
+form{width:87%;
+	border:1px solid #576388;
+	background:#d8e1ff;
+	margin:20px;
+	padding:20px}
+
+.main .articles {
+	width:68.5%;
+	margin-right:1.5%;
+	float:left;
+	
+	
+}
+
+.main .articles article {
+	padding:20px;
+	background:#fff;
+	margin-bottom:20px;
+}
+
+div .abc img {
+	padding:0;
+	float:right;
+	box-sizing:border-box;
+}
+
+div img {
+	padding:1% 25%;
+}
+
+
+aside {
+	width:30%;
+	float:left;
+	background:#c1e7ff;
+	padding:20px;
+	box-sizing:border-box;
+}
+
+footer{
+	background:#346888;
+	color:#fff;
+	clear:both;
+	padding:10px 0px;
+	text-align:left;
+}
