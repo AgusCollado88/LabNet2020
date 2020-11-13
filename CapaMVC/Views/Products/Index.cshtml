@@ -1,0 +1,44 @@
+﻿@model List<CapaMVC.Models.ProductsViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listado de Productos</h2>
+<div class="btn btn-info">@Html.ActionLink("Insertar", "InsertUpdate", "Products") </div>
+<table class="table">
+    <tr>
+        <th>ID:</th>
+        <th>Nombre:</th>
+        <th>Proveedor:</th>
+        <th>Categoria:</th>
+        <th>Cantidad:</th>
+        <th>Precio Unitario:</th>
+        <th>Unidades en Stock:</th>
+        <th>Unidades Pedidas:</th>
+        <th>Nivel de Aprovisionamiento:</th>
+        <th>Descontinuado:</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@item.ID.</td>
+    <td>@item.Nombre</td>
+    <td>@item.Proveedor</td>
+    <td>@item.Categoria.</td>
+    <td>@item.Cantidad.</td>
+    <td>@item.PrecioUnitario.</td>
+    <td>@item.UnidadesStock.</td>
+    <td>@item.UnidadesPedidas.</td>
+    <td>@item.Aprovisionamiento.</td>
+    <td>@item.Descontinuado.</td>
+    <td class=" = btn btn-info">@Html.ActionLink("Modificar", "InsertUpdate", new { id = item.ID })</td>
+    <td class=" = btn btn-warning" onclick="return confirm('Está seguro que desea eliminar el producto: @item.Nombre ?')">@Html.ActionLink("Eliminar", "Delete", new { id = item.ID })</td>
+</tr>
+    }
+</table>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "ResourceAcces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{24DE0F3B-54B4-45DC-B5C6-7CCDBD0EEBC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaMVC", "CapaMVC\CapaMVC.csproj", "{FA92A0EE-2B97-4D9C-B072-9DFD2F5F5460}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{24DE0F3B-54B4-45DC-B5C6-7CCDBD0EEBC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24DE0F3B-54B4-45DC-B5C6-7CCDBD0EEBC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24DE0F3B-54B4-45DC-B5C6-7CCDBD0EEBC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA92A0EE-2B97-4D9C-B072-9DFD2F5F5460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA92A0EE-2B97-4D9C-B072-9DFD2F5F5460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA92A0EE-2B97-4D9C-B072-9DFD2F5F5460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA92A0EE-2B97-4D9C-B072-9DFD2F5F5460}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

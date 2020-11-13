@@ -1,0 +1,52 @@
+﻿@model CapaMVC.Models.ProductsViewModel
+@{
+    ViewBag.Title = "Área de Ingreso o Modificación del Producto";
+}
+
+<h2>ViewBag.Title</h2>
+
+@using (Html.BeginForm("InsertUpdate", "Products", FormMethod.Post))
+{
+
+<div>
+    Nombre: @Html.TextBoxFor(r => r.Nombre)
+    @Html.ValidationMessageFor(d => d.Nombre, null, new { @class = "red" })
+</div>
+<div>
+    Proveedor: @Html.TextBoxFor(r => r.Proveedor)
+    @Html.ValidationMessageFor(d => d.Proveedor, null, new { @class = "red" })
+</div>
+<div>
+    Categoria: @Html.TextBoxFor(r => r.Categoria)
+    @Html.ValidationMessageFor(d => d.Categoria, null, new { @class = "red" })
+</div>
+<div>
+    Cantidad: @Html.TextBoxFor(r => r.Cantidad)
+    @Html.ValidationMessageFor(d => d.Cantidad, null, new { @class = "red" })
+</div>
+<div>
+    Precio Unitario: @Html.TextBoxFor(r => r.PrecioUnitario)
+    @Html.ValidationMessageFor(d => d.PrecioUnitario, null, new { @class = "red" })
+</div>
+<div>    
+    Unidades en Stock: @Html.TextBoxFor(r => r.UnidadesStock)
+    @Html.ValidationMessageFor(d => d.UnidadesStock, null, new { @class = "red" })
+</div>
+<div>
+    Unidades Pedidas: @Html.TextBoxFor(r => r.UnidadesPedidas)
+    @Html.ValidationMessageFor(d => d.UnidadesPedidas, null, new { @class = "red" })
+</div>
+<div>
+    Nivel del Aprovisionamiento: @Html.TextBoxFor(r => r.Aprovisionamiento)
+    @Html.ValidationMessageFor(d => d.Aprovisionamiento, null, new { @class = "red" })
+</div> 
+<div>   
+    Descontinuado: @Html.TextBoxFor(r => r.Descontinuado)
+    @Html.ValidationMessageFor(d => d.Descontinuado, null, new { @class = "red" })
+
+</div>
+    <input type="submit" name="Guardar" />
+}
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

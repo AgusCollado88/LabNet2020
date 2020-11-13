@@ -9,11 +9,11 @@ namespace Logic
 {
     interface ILogic<T>
     {
-        List<T> GetAll();
+        List<T> GetAll();   
         T GetOne(int id);
         T Insert(T entity);
-        T Update(T entity);
-        T Delete(T entity);
+        bool Update(T entity);
+        bool Delete(int id);
         
     }
 }

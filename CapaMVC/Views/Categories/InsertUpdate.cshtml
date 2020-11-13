@@ -1,0 +1,25 @@
+﻿@model CapaMVC.Models.CategoriesViewModel
+@{
+    ViewBag.Title = "Área de Ingreso o Modificación de la Categoría";
+}
+
+<h2>ViewBag.Title</h2>
+
+@using (Html.BeginForm("InsertUpdate", "Categories", FormMethod.Post))
+{
+    <div>
+
+        Nombre: @Html.TextBoxFor(r => r.Nombre)
+        @Html.ValidationMessageFor(d => d.Nombre, null, new { @class = "red" })
+    </div>
+    <div>
+        Descripcion: @Html.TextBoxFor(r => r.Descripcion)
+        @Html.ValidationMessageFor(d => d.Descripcion, null, new { @class = "red" })
+    </div>
+    <input type="submit" name="Guardar" />
+
+    
+}
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

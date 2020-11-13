@@ -42,48 +42,29 @@ namespace Logic
         }
 
 
-        public Categories Update(Categories entity)
+        public bool Update(Categories entity)
+        {
+            var categoriaAEditar = this.GetOne(entity.CategoryID);
+            categoriaAEditar.CategoryName = entity.CategoryName;
+            categoriaAEditar.Description = entity.Description;
+            context.SaveChanges();
+            return true;
+
+        }
+
+        public bool Delete(int id)
         {
             try
             {
-                Categories categoriaAEditar = GetOne(entity.CategoryID);
-                if (categoriaAEditar == null)
-                {
-                    Console.WriteLine("El número de ID ingresado no es válido.");
-                    return categoriaAEditar;
+                var categoriaAEliminar = this.GetOne(id);
 
-                }
-                else
-                {
-                    categoriaAEditar.CategoryName = entity.CategoryName;
-                    categoriaAEditar.Description = entity.Description;
-                    context.SaveChanges();
-                    Console.WriteLine("");
-                    Console.WriteLine($"LA MODIFICACIÓN FUE EXITOSA: {System.Environment.NewLine} CATEGORIA {entity.CategoryID}: {entity.CategoryID} CON DESCRIPCIÓN: {entity.Description}. {System.Environment.NewLine}");
-                    return categoriaAEditar;
-                }
-            }
-            catch
-            {
-                throw 
-            }
-        }
-
-        public Categories Delete(Categories entity)
-        {
-            Categories categoriaAEliminar = GetOne(entity.CategoryID);
-            if (categoriaAEliminar != null)
-            {
                 context.Categories.Remove(categoriaAEliminar);
                 context.SaveChanges();
-                Console.WriteLine("");
-                Console.WriteLine("SE HA ELIMINADO LA CATEGORIA");
-                return categoriaAEliminar;
+                return true;
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine("El número de ID ingresado no es válido.");
-                return categoriaAEliminar;
+                throw new Exception("Ocurrio un error al eliminar la región");
             }
         }
     }

@@ -1,0 +1,28 @@
+﻿@model List<CapaMVC.Models.CategoriesViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listado de Categorias</h2>
+
+<div class="btn btn-info">@Html.ActionLink("Insertar", "InsertUpdate", "Categories") </div>
+<table class="table">
+    <tr>
+        <th>ID:</th>
+        <th>Nombre:</th>
+        <th>Descripción:</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID.</td>
+            <td>@item.Nombre</td>
+            <td>@item.Descripcion</td>
+            <td class=" = btn btn-info">@Html.ActionLink("Modificar", "InsertUpdate", new { id = item.ID })</td>
+            <td class=" = btn btn-warning" onclick="return confirm('Está seguro que desea eliminar la categoria: @item.Nombre ?')">@Html.ActionLink("Eliminar", "Delete", new { id = item.ID })</td>
+        </tr>
+    }
+    
+
+</table>
+
