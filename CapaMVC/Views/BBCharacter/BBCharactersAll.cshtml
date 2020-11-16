@@ -1,0 +1,22 @@
+﻿@model List<CapaMVC.Models.BBCharacters>
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Lista de Personajes</h2>
+
+<table class="table">
+   @foreach (var item in Model)
+    {
+    <tr>
+        <td>@item.char_id</td>
+        <td>@item.name</td>
+        <td>@item.birthday</td>
+        <td><img src="@Url.Content(item.img)" alt ="" style="height : 75px;width : 60px;"/></td>
+        <td>@item.status</td>
+        <td>@item.nickname</td>
+        <td>@item.portrayed</td>
+        <td>@item.category</td>
+    </tr>
+    }
+</table>
